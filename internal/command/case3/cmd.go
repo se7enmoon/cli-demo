@@ -1,4 +1,4 @@
-package case2
+package case3
 
 import (
 	"fmt"
@@ -9,16 +9,21 @@ import (
 // 获取参数Args
 
 var Cmd = &cli.Command{
-	Name:    "case2",
-	Aliases: []string{"c2"},
+	Name:    "case3",
+	Aliases: []string{"c3"},
 	Args:    true,
-	Usage:   "获取参数Args用例",
+	Usage:   "Flag参数用例",
 	Action:  Case,
 }
 
 func Case(cli *cli.Context) (err error) {
 	arg := cli.Args().Get(0)
-
-	fmt.Println(xcolor.Red(fmt.Sprintf("Case 2 已执行, 参数为%s！", arg)))
+	var ans string
+	if cli.String("lang") == "spanish" {
+		ans = fmt.Sprintf("Hola %s", arg)
+	} else {
+		ans = fmt.Sprintf("Hello %s", arg)
+	}
+	fmt.Println(xcolor.Red(ans))
 	return nil
 }

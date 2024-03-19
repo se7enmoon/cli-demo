@@ -2,8 +2,8 @@ package case1
 
 import (
 	"fmt"
+	"github.com/se7enmoon/cli-demo/pkg/utils/xcolor"
 	cli "github.com/urfave/cli/v2"
-	"gitlab.local.com/voda/cli-demo/pkg/utils/xcolor"
 )
 
 var Cmd = &cli.Command{

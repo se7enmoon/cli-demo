@@ -1,10 +1,10 @@
 package main
 
 import (
+	"github.com/se7enmoon/cli-demo/internal/command/case1"
+	"github.com/se7enmoon/cli-demo/internal/command/case2"
+	"github.com/se7enmoon/cli-demo/internal/command/case3"
 	cli "github.com/urfave/cli/v2"
-	"gitlab.local.com/voda/cli-demo/internal/command/case1"
-	"gitlab.local.com/voda/cli-demo/internal/command/case2"
-	"gitlab.local.com/voda/cli-demo/internal/command/case3"
 	"log"
 	"os"
 )

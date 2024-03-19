@@ -1,4 +1,4 @@
-module gitlab.local.com/voda/cli-demo
+module github.com/se7enmoon/cli-demo
 
 go 1.20
 
